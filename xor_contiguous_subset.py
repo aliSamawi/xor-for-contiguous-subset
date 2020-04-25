@@ -15,8 +15,8 @@ def calculate_xor(num_array: list):
     result = 0
     length = len(num_array)
     for i in range(length):
-        index = i + 1
-        p = index * (length - index + 1)
+        index = i + 1 # get the position of element which ignored in pseducode
+        p = index * (length - index + 1) # calculate the iteration of element in contiguous subsets
         if p % 2 == 1:
             result = result ^ num_array[i]
     return result
